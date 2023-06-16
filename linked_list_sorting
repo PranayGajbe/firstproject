@@ -1,0 +1,40 @@
+# firstproject
+import java.util.*;
+
+public class sort
+{
+	public static void main(String args[])
+	{
+		int x , y , temp;
+		
+
+		LinkedList<Integer> l1 = new LinkedList<>();
+
+		l1.add(40);
+		l1.add(30);
+		l1.add(20);
+		l1.add(10);
+
+		System.out.println("Before Sorting: " + l1);
+		System.out.println();
+
+		LinkedList<Integer> l2 = new LinkedList<>();
+
+		for( int i = 0; i < l1.size()-1; i++)
+		{	
+			x = l1.get(i);
+
+			y = l1.get(i+1);
+
+			if(x > y)
+			{
+				temp = x;
+				x = y;
+				y = temp;
+			}	
+System.out.println(temp);
+		}
+		
+	}
+}
+
